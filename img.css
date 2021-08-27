@@ -1,0 +1,41 @@
+body{
+    margin:0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    row-gap: 2px;
+    column-gap: 3px;
+    grid-template-areas: "header header header header header header"
+    "sidebar main main main main aside"
+    "footer footer footer footer footer footer"
+
+    ;
+}
+.header{
+    height: 100px;
+    background-color: blue;
+    grid-area: header;
+    
+}
+.sidebar{
+    height: 100px;
+    background-color: skyblue;
+    grid-area: sidebar;
+}
+.main{
+    height: 100px;
+    background-color: red;
+    grid-area: main;
+}
+.aside{
+    height: 100px;
+    background-color: greenyellow;
+    grid-area: aside;
+}
+.footer{
+    height: 100px;
+    background-color: rgb(255, 0, 191);
+    grid-area: footer;
+}
+
